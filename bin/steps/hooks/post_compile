@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#copy db2 licensing
+cp -p /home/vcap/app/db2consv_ee.lic /home/vcap/app/.heroku/python/lib/python2.7/site-packages/clidriver/license/
+
 if [ -f bin/post_compile ]; then
     echo "-----> Running post-compile hook"
     chmod +x bin/post_compile
