@@ -11,3 +11,5 @@ COPY requirements.txt /app/
 RUN pip install --disable-pip-version-check --no-cache-dir -r /app/requirements.txt
 
 COPY . /app
+
+COPY /app/db2consv_ee.lic /app/.heroku/python/lib/python2.7/site-packages/clidriver/license/
