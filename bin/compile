@@ -254,8 +254,8 @@ if [[ -d .heroku/src ]]; then
   cp -R .heroku/src $CACHE_DIR/.heroku/ &> /dev/null || true
 fi
 
-find / -name  "*.lic" -type f
-find / -name  "clidriver" -type d
+#find / -name  "*.lic" -type f
+#find / -name  "clidriver" -type d
 
 # Measure the size of the Python installation.
 mmeasure 'python.size' "$(measure-size)"
