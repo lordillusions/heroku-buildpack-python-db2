@@ -6,7 +6,7 @@
 
 if [[ -f db2consv_zs.lic ]]; then
 	cp -p db2consv_zs.lic /home/vcap/app/.heroku/python/lib/python2.7/site-packages/clidriver/license/ &> /dev/null || true
-	chmod 777 /home/vcap/app/.heroku/python/lib/python2.7/site-packages/clidriver/license/db2consv_zs.lic &> /dev/null || true
+	chmod 666 /home/vcap/app/.heroku/python/lib/python2.7/site-packages/clidriver/license/db2consv_zs.lic &> /dev/null || true
 	echo 'DB2 License found and added to python instalation'
 fi
 
